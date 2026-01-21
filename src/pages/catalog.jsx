@@ -1,4 +1,5 @@
-import About from '@/sections/About'
+
+import Catalog from "@/sections/Catalog";
 
 export const metadata = {
   title: 'Catalog',
@@ -7,8 +8,7 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <h1>Страница каталога товаров</h1>
-      <About />
+      <Catalog />
     </>
   )
 }

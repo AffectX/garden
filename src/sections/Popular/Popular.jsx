@@ -3,43 +3,40 @@ import clsx from 'clsx'
 import Section from "@/layouts/Section";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
-import CardList from "@/components/CardList";
+import Grid from "@/components/Grid";
+import popularItems from "@/sections/Popular/popularItems";
 
 export default (props) => {
-
 
   const {
     className,
   } = props
 
   return (
-    <div
-      className={clsx(className, 'popular')}
+    <Section
+      className={clsx(className, 'popular')} title="Популярные товары"
+      titleId="popular-title"
+      description = "Самые востребованные растения и товары, которые выбирают наши покупатели"
+      actions = {(
+        <div>
+          <Button
+            className="popular__button"
+            href="/"
+            label="Смотреть товары"
+          >
+          </Button>
+        </div>
+      )}
     >
-      <Section
-        title="Популярные товары"
-        titleId="popular-title"
-        description = "Самые востребованные растения и товары, которые выбирают наши покупатели"
-        actions = {(
-          <div>
-            <Button
-              className="popular__button"
-              href="/"
-              label="Смотреть товары"
-            >
-            </Button>
-          </div>
-
-        )}
-      >
-        <CardList>
-
-        </CardList>
-
-
-
-      </Section>
-    </div>
+      <Grid columns={3}>
+        {popularItems.map((popularItem, index ) => (
+          <Card
+            {...popularItem}
+            key={index}
+          />
+        ))}
+      </Grid>
+    </Section>
   )
 }
 

@@ -1,0 +1,25 @@
+.catalog {
+  padding-top: 60px;
+  padding-bottom: fluid(80, 45);
+  display: grid;
+  row-gap: fluid-to-laptop(75, 30);
+
+  &__header {
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 30px;
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+}

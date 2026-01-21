@@ -1,0 +1,24 @@
+.grid {
+  --gridColumns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumns), 1fr);
+  column-gap: fluid(50, 40);
+  row-gap: 30px;
+
+  &--2 {
+    --gridColumns: 2;
+  }
+
+  &--3 {
+    --gridColumns: 3;
+
+    @include tablet {
+      --gridColumns: 2;
+    }
+
+    @include mobile {
+      --gridColumns: 1;
+    }
+  }
+}

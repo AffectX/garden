@@ -1,0 +1,14 @@
+.reviews-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: fluid-to-laptop(50, 34);
+  row-gap: 15px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}

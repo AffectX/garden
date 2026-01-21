@@ -1,0 +1,17 @@
+.card-list {
+  --NumberOfColumns: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--NumberOfColumns), 1fr);
+    column-gap: fluid(50, 40);
+    row-gap: 30px;
+
+    @include tablet {
+      --NumberOfColumns: 2;
+    }
+
+    @include mobile {
+      --NumberOfColumns: 1;
+    }
+
+}

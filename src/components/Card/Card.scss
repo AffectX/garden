@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+
+  &__images {
+    flex-grow: 1;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-m);
+  }
+
+  &__body {
+    display: grid;
+    row-gap: 5px;
+  }
+
+  &__title {
+    color: var(--color-red);
+  }
+
+  &__description {
+    max-width: 302px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.review {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  background-color: var(--color-pink);
+  border: var(--border);
+  border-radius: var(--border-radius-l);
+
+  &__author {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-red);
+  }
+
+  &__quantity {
+    color: var(--color-black);
+    font-size: 20px;
+  }
+}

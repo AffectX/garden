@@ -1,0 +1,60 @@
+.footer {
+  padding-top: 43px;
+  padding-bottom: 40px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    @include mobile {
+      row-gap: 30px;
+    }
+  }
+
+  &__menu {
+    --footerMenuColumns: 4;
+
+    display: grid;
+    grid-template-columns: repeat(var(--footerMenuColumns), 1fr);
+    gap: 30px fluid(30, 10);
+
+    @include tablet {
+      --footerMenuColumns: 2;
+    }
+
+    @include mobile {
+      --footerMenuColumns: 1;
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+
+      @include mobile {
+        row-gap: 8px;
+      }
+    }
+
+    &-title {
+      color: var(--color-black);
+      font-size: 32px;
+      font-family: "Playfair Display", sans-serif;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 12px;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+
+
+}

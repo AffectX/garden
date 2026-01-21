@@ -1,0 +1,39 @@
+.section {
+  display: grid;
+  row-gap: fluid(40, 20);
+  padding-block: fluid(50, 30);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 16px;
+
+    @include tablet {
+      align-items: start;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 476px;
+  }
+
+  &__description {
+    max-width: 476px;
+    color: var(--color-gray);
+  }
+
+
+
+
+
+}

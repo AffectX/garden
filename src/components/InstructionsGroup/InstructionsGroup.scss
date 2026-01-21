@@ -1,0 +1,72 @@
+.instructions-group {
+  &--has-counter {
+    counter-reset: custom-counter;
+    list-style: none;
+
+    .instructions-group__item {
+      display: flex;
+      column-gap: fluid(20, 8);
+      align-items: end;
+      counter-increment: custom-counter;
+
+      @include mobile {
+        align-items: flex-start;
+      }
+
+      &::before {
+        @include flex-center;
+
+        content: counter(custom-counter, );
+        min-width: 50px;
+        height: 154px;
+        font-size: fluid(128, 64);
+        font-weight: 400;
+        font-family: "Playfair Display", sans-serif;
+        color: var(--color-red);
+
+        @include mobile {
+          height:  77px;
+          min-width: 25px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+  }
+
+  &--2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 90px;
+    column-gap: 60px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  &__item {
+    break-inside: avoid-column;
+
+    &-title {
+      color: var(--color-black);
+      font-size: fluid(32, 24);
+      max-width: 356px;
+
+      @include mobile {
+        color: var(--color-red);
+        font-family: "Playfair Display";
+      }
+    }
+
+    &-description {
+      max-width: 356px;
+    }
+  }
+}

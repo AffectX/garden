@@ -1,0 +1,45 @@
+.accordion-group {
+
+  &--has-counter {
+    --accordionGroupCounterHight: #{fluid(67, 46)};
+    counter-reset: custom-counter;
+    list-style: none;
+    display: grid;
+    row-gap: 15px;
+
+    @include mobile {
+      row-gap: 10px;
+    }
+
+    .accordion-group__item {
+      counter-increment: custom-counter;
+      display: flex;
+      column-gap: fluid(20, 9);
+      background-color: var(--color-pink);
+      border: var(--border);
+      border-radius: var(--border-radius-l);
+      font-size: fluid(24, 16);
+      font-family: "Playfair Display", sans-serif;
+
+
+      &::before {
+        @include flex-center();
+        align-items: flex-end;
+        content: counter(custom-counter);
+        font-size: fluid(48, 32);
+        font-weight: 400;
+        font-family: "Playfair Display", sans-serif;
+        color: var(--color-black);
+        min-width: fluid(62, 42);
+        height: var(--accordionGroupCounterHight);
+      }
+    }
+  }
+
+
+
+  &__item {
+    break-inside: avoid-column;
+    padding: 15px 24px 36px 34px;
+  }
+}

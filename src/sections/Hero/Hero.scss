@@ -6,7 +6,7 @@
   }
 
   &__inner {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     gap: fluid(50,20);
 
@@ -19,7 +19,7 @@
   }
 
   &__body {
-    max-width: 672px;
+    min-width: 672px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;

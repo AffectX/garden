@@ -62,9 +62,7 @@
       text-transform: uppercase;
 
       &.is-active {
-        color: var(--color-white);
-        background-color: var(--color-red);
-        border-radius: var(--border-radius-s);
+        text-decoration: underline;
       }
     }
   }

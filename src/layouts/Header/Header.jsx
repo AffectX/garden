@@ -1,9 +1,7 @@
 import './Header.scss'
 import clsx from 'clsx'
-import Logo from '@/components/Logo'
-import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
-import Icon from '@/components/Icon'
+
 
 export default (props) => {
   const { url } = props
@@ -17,10 +15,7 @@ export default (props) => {
       label: 'Каталог',
       href: '/catalog',
     },
-    {
-      label: 'Контакты',
-      href: '/contacts',
-    },
+
   ]
 
   return (

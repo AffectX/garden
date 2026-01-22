@@ -3,8 +3,11 @@ import clsx from 'clsx'
 import Card from "@/components/Card";
 import catalogGroups from "@/sections/Catalog/catalogGroups";
 import Grid from "@/components/Grid";
+import Tabs from "@/components/Tabs";
 
 export default (props) => {
+  const tabsTitle = 'catalog-tabs'
+
   const catalogId="catalog-title"
   const {
     className,
@@ -22,40 +25,25 @@ export default (props) => {
         </h1>
       </header>
       <div className="catalog__body">
-        <div className="catalog__actions">
-          <button
+        <Tabs
+          title={tabsTitle}
+          items={catalogGroups.map((catalogGroup) => ({
+            title: catalogGroup.title,
+            isActive: catalogGroup.isActive,
+            children: (
+              <Grid columns={3}>
+                {catalogGroup.items.map((catalogItem, index) => (
+                  <Card
+                    {...catalogItem}
+                    key={index}
+                  />
+                ))}
+              </Grid>
+            )
+          }))}
+        >
 
-            type="button"
-          >
-            КНОПКА ВСЕ
-          </button>
-          <button
-
-            type="button"
-          >
-            КНОПКА ЦВЕТЫ
-          </button>
-          <button
-
-            type="button"
-          >
-            КНОПКА КУСТАРНИКИ
-          </button>
-          <button
-
-            type="button"
-          >
-            Садовый инвентарь
-          </button>
-        </div>
-        <Grid columns={3}>
-          {catalogGroups[0].items.map((catalogItem, index) => (
-            <Card
-              {...catalogItem}
-              key={index}
-            />
-          ))}
-        </Grid>
+        </Tabs>
 
       </div>
     </section>

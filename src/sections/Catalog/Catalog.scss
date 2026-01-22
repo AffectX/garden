@@ -8,18 +8,5 @@
     text-align: center;
   }
 
-  &__body {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-  }
 
-  &__actions {
-    display: flex;
-    gap: 30px;
-
-    @include mobile {
-      gap: 20px;
-    }
-  }
 }

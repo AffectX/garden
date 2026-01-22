@@ -1,0 +1,35 @@
+.tabs-navigation {
+  display: flex;
+
+  gap: 20px;
+
+  &__button {
+    @include flex-center(true);
+
+    padding: 10px 30px;
+    min-width: 190px;
+    border-radius: var(--border-radius-s);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-red);
+    background-color: var(--color-pink);
+    white-space: nowrap;
+
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-red);
+    }
+
+    @include mobile {
+      padding-top: 5px;
+      min-width: 88px;
+    }
+
+    &.is-active {
+      color: var(--color-white);
+      background-color: var(--color-red);
+      pointer-events: none;
+    }
+  }
+}

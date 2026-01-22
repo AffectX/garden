@@ -1,0 +1,10 @@
+.tabs {
+  display: grid;
+  row-gap: 30px;
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+}

@@ -42,7 +42,7 @@ const catalogGroups = [
     ]
   },
   {
-    title: 'Цветы',
+    title: 'Кустарники',
     items: [
       {
         title: 'Эдельвейс альпийский',

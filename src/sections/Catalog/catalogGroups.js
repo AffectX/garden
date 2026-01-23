@@ -260,6 +260,18 @@ const catalogGroups = [
         inStock: true,
       },
 
+      {
+        title: 'Петуния почвопокровная Гарден Бьюти ',
+        description: 'Для кашпо и подвесных корзин, для ландшафтного дизайна, а также для клумб и рабаток.',
+        image: '/src/assets/images/catalog/prof/petunia_garden_beauti.jpg',
+        price: 90,
+        manufacturer: 'Производитель Farao - Италия ',
+        parameters: 'Высота растения — 25-30 см \n Длина побегов — 90-100 см  \n Диаметр цветка — 4-5 см',
+        inStock: true,
+      },
+
+
+
 
       {
         title: 'Гацания жёстковатая Газу Формула Микс',

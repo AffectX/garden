@@ -13,7 +13,7 @@ const Banners = {
     title: "Свяжитесь с нами",
     description: "Поможем выбрать растения и ответим на любые вопросы",
     buttonLabel: "Telegram-сообщество",
-    buttonHref: "/",
+    buttonHref: "https://t.me/Rayssad",
   }
 }
 
@@ -41,6 +41,7 @@ export default (props) => {
         <Button
           className="banner__button"
           href={banner.buttonHref}
+          target="_blank"
           mode="red"
           label={banner.buttonLabel}
         />

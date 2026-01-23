@@ -7,6 +7,7 @@ export default (props) => {
     className,
     type = 'button',
     href,
+    target,
     label,
     isLabelHidden = false,
     iconName,
@@ -19,7 +20,7 @@ export default (props) => {
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
-  const linkAttributes = { href }
+  const linkAttributes = { href, target }
   const buttonAttributes = { type }
   const attributesByTag = isLink ? linkAttributes : buttonAttributes
   const title = isLabelHidden ? label : undefined

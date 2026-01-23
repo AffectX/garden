@@ -8,15 +8,15 @@ export default () => {
     {
       type: 'links',
       title: 'Каталог',
-      items: ['Цветы', 'Цветы', 'Цветы'],
+      items: ['Проф семяна цветов', 'Цветы', 'Цветы'],
     },
     {
       type: 'links',
       title: 'Контакты',
       items: [
-        '+7 (999) 999-99-99',
-        'info@gmail.com',
-        'Город Иркутск проспект Иванова',
+        { type: 'phone', value: '+7 (999) 999-99-99' },
+        { type: 'email', value: 'info@gmail.com' },
+        { type: 'address', value: 'Город Иркутск проспект Иванова' },
       ],
     },
     {
@@ -39,27 +39,49 @@ export default () => {
     },
   ]
 
-
   return (
     <footer className="footer">
       <div className="footer__inner container">
         <nav className="footer__menu">
-          {menuItems.map(({title,type, button, items}, index) => (
+          {menuItems.map(({title, type, button, items}, index) => (
             <div className="footer__menu-column" key={index}>
-              <a className="footer__menu-title" href="/">
+              <a className="footer__menu-title" href={type === 'links' && title === 'Каталог' ? '/catalog' : undefined}>
                 {title}
               </a>
 
               {/* Список ссылок */}
               {type === 'links' && (
                 <ul className="footer__menu-list">
-                  {items.map((text, i) => (
-                    <li className="footer__menu-item" key={i}>
-                      <a className="footer__menu-link" href="/">
-                        {text}
-                      </a>
-                    </li>
-                  ))}
+                  {items.map((item, i) => {
+                    // для Каталога item — строка
+                    if (title === 'Каталог') {
+                      return (
+                        <li className="footer__menu-item" key={i}>
+                          <a className="footer__menu-link" href="/catalog">{item}</a>
+                        </li>
+                      )
+                    }
+
+                    // для Контактов item — объект с type и value
+                    if (title === 'Контакты') {
+                      let href;
+                      if (item.type === 'phone') href = `tel:${item.value.replace(/\D/g,'')}`;
+                      if (item.type === 'email') href = `mailto:${item.value}`;
+                      if (item.type === 'address') href = undefined; // адрес без ссылки
+
+                      return (
+                        <li className="footer__menu-item" key={i}>
+                          {href ? (
+                            <a className="footer__menu-link" href={href}>{item.value}</a>
+                          ) : (
+                            <span>{item.value}</span>
+                          )}
+                        </li>
+                      )
+                    }
+
+                    return null;
+                  })}
                 </ul>
               )}
 
@@ -94,6 +116,5 @@ export default () => {
         </div>
       </div>
     </footer>
-
   )
 }

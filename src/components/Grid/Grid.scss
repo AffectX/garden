@@ -13,12 +13,18 @@
   &--3 {
     --gridColumns: 3;
 
+    row-gap: 60px;
+
     @include tablet {
       --gridColumns: 2;
+
+      row-gap: 42px;
     }
 
     @include mobile {
       --gridColumns: 1;
+
+      row-gap: 30px;
     }
   }
 }

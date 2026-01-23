@@ -17,7 +17,7 @@ export default (props) => {
           <li className="socials__item" key={index}>
             <Button
               className="socials__link"
-              href="/"
+              href="https://t.me/Rayssad"
               target="_blank"
               label="Telegram"
               isLabelHidden

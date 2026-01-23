@@ -32,12 +32,15 @@ export default (props) => {
             isActive: catalogGroup.isActive,
             children: (
               <Grid columns={3}>
-                {catalogGroup.items.map((catalogItem, index) => (
+                {catalogGroup.items
+                  .filter(({inStock = true}) => inStock)
+                  .map((catalogItem, index) => (
                   <Card
-                    {...catalogItem}
-                    key={index}
-                  />
-                ))}
+                {...catalogItem}
+                key={index}
+              />
+            ))
+                }
               </Grid>
             )
           }))}

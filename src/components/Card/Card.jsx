@@ -10,22 +10,34 @@ export default (props) => {
     description,
     price,
     image,
+    manufacturer,
+    parameters,
   } = props
 
   return (
     <article
-      className={clsx(className, 'card')}
+      className={clsx(className, 'card',)}
     >
+
       <div className="card__images">
         <Image className="card__image" alt={title} src={image}/>
       </div>
       <div className="card__body">
-        <div className="card__info">
           <h3 className="card__title">{title}</h3>
-          <div className="card__description">
-            <p>{description}</p>
+          <div className="card__info">
+            {manufacturer && (
+              <div className="card__manufacturer">{manufacturer}</div>
+            )}
+            {parameters && (
+              <div className="card__parameters">
+                {parameters}
+              </div>
+            )}
+            <div className="card__description">
+              <p>{description}</p>
+            </div>
           </div>
-        </div>
+
 
       </div>
       <div className="card__actions">

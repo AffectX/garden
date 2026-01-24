@@ -270,6 +270,27 @@ const catalogGroups = [
         inStock: true,
       },
 
+      {
+        title: 'Петуния ампельная Е3 Изи Вейв Роуз Морн F1',
+        description: 'Можно выращивать как во всех типах контейнеров, так и в ландшафтном озеленении – в качестве почвопокровного растения.',
+        image: '/src/assets/images/catalog/prof/petunia_easy_wave_Rose_Morn.jpg',
+        price: 180,
+        manufacturer: 'PanAmerican Seed - США ',
+        parameters: 'Высота растения — 15-30 см \n Ширина — 80-100 см  \n Диаметр цветка — 7-8 см',
+        inStock: true,
+      },
+
+      {
+        title: 'Петунья ампельная F1 Тайдал Вэйв Ред Велюр',
+        description: 'Растения отлично подходят для выращивания как почвопокровное. Оно застилает плотным ковром большие площади.',
+        image: '/src/assets/images/catalog/prof/petunia_taidel_wave_red_velur.jpg',
+        price: 180,
+        manufacturer: 'PanAmerican Seed - США ',
+        parameters: 'Высота растения — 45-55 см \n Диаметр — 150 см и более  \n Диаметр цветка — 5-6 см',
+        inStock: true,
+      },
+
+
 
 
 

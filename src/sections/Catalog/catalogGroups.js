@@ -305,6 +305,18 @@ const catalogGroups = [
       },
 
 
+
+      {
+        title: 'Петхоа Калиберст Еллоу F1',
+        description: 'Подходит для подвесных корзин, кашпо, крупных вазонов.',
+        image: '/src/assets/images/catalog/prof/pethoa_caliberst_yellow.jpg',
+        price: 200,
+        manufacturer: 'PanAmerican Seed - США ',
+        parameters: 'Высота растения — 15-25 см \n Ширина куста — 50-70 см  \n Диаметр цветка — 5-6 см',
+        inStock: true,
+      },
+
+
     ]
   },
 ]

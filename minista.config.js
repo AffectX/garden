@@ -20,15 +20,14 @@ export default defineConfig({
   assets: {
     // Общая папка для ассетов (шрифты, иконки, картинки, скрипты)
     outDir: 'assets',
-    bundle: {
-      outName: 'bundle.[hash]',
-    },
+    outName: 'bundle',
+
 
 
     // Картинки (оптимизируются и ресайзятся при сборке)
     images: {
       outDir: 'assets/images',
-      outName: '[name].[hash]',
+      outName: '[name]',
       remoteName: 'remote',
       optimize: {
         layout: 'constrained',
@@ -48,7 +47,7 @@ export default defineConfig({
     icons: {
       srcDir: 'src/assets/icons',
       outDir: 'assets/images',
-      outName: '[dirname].[hash]',
+      outName: '[dirname]',
       svgstoreOptions: {
         // Удаляем fill/stroke из символов, чтобы управлять цветом через CSS
         cleanSymbols: ['fill', 'stroke'],
@@ -58,7 +57,7 @@ export default defineConfig({
     // Шрифты (woff2 и пр.)
     fonts: {
       outDir: 'assets/fonts',
-      outName: '[name].[hash]',
+      outName: '[name]',
     },
 
     // Имя основного бандла
@@ -96,6 +95,10 @@ export default defineConfig({
       less: {},
       stylus: {},
     },
+  },
+
+  bundle: {
+    outName: 'bundle',
   },
 
   // Можно прокинуть дополнительные опции в Vite

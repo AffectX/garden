@@ -9,7 +9,6 @@ export default () => {
     <section className="hero container" aria-labelledby={titleId}>
       <div className="hero__inner ">
         <div className="hero__body ">
-
           <h1 className="hero__title" id={titleId}>
             Райский сад Сибири <br/>
             Растения, грунты и всё для ухода
@@ -20,7 +19,7 @@ export default () => {
           <div className="hero__body-actions">
             <Button
               className="hero__button"
-              href="/"
+              href="/catalog"
               label="Каталог"
             >
 
@@ -32,7 +31,6 @@ export default () => {
             >
             </Button>
           </div>
-
         </div>
         <div className="hero__images">
           <Image  className="hero__image" src="/src/assets/images/Logo.jpg"/>

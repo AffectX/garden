@@ -21,7 +21,7 @@ export default (props) => {
         <div>
           <Button
             className="popular__button"
-            href="/"
+            href="/catalog"
             label="Смотреть товары"
           >
           </Button>

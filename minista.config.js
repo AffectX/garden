@@ -20,9 +20,7 @@ export default defineConfig({
   assets: {
     // Общая папка для ассетов (шрифты, иконки, картинки, скрипты)
     outDir: 'assets',
-    outName: 'bundle',
-
-
+    outName: '[name]',
 
     // Картинки (оптимизируются и ресайзятся при сборке)
     images: {
@@ -97,9 +95,7 @@ export default defineConfig({
     },
   },
 
-  bundle: {
-    outName: 'bundle',
-  },
+
 
   // Можно прокинуть дополнительные опции в Vite
   vite: {

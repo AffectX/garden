@@ -32,7 +32,7 @@ export default () => {
             </Button>
           </div>
         </div>
-        <div className="hero__images">
+        <div className="hero__images hidden-mobile ">
           <Image  className="hero__image" src="/src/assets/images/Logo.jpg"/>
         </div>
       </div>

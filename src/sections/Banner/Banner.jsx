@@ -31,7 +31,7 @@ export default (props) => {
 
   return (
     <section className={clsx(className, 'banner')}>
-      <div className="banner__inner">
+      <div className="banner__inner container">
         <h2 className="banner__title">{banner.title}</h2>
 
         <div className="banner__description">

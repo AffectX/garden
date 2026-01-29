@@ -20,12 +20,15 @@ export default defineConfig({
   assets: {
     // Общая папка для ассетов (шрифты, иконки, картинки, скрипты)
     outDir: 'assets',
-    outName: '[name]',
+    bundle: {
+      outName: 'bundle.[hash]',
+    },
+
 
     // Картинки (оптимизируются и ресайзятся при сборке)
     images: {
       outDir: 'assets/images',
-      outName: '[name]',
+      outName: '[name].[hash]',
       remoteName: 'remote',
       optimize: {
         layout: 'constrained',
@@ -45,7 +48,7 @@ export default defineConfig({
     icons: {
       srcDir: 'src/assets/icons',
       outDir: 'assets/images',
-      outName: '[dirname]',
+      outName: '[dirname].[hash]',
       svgstoreOptions: {
         // Удаляем fill/stroke из символов, чтобы управлять цветом через CSS
         cleanSymbols: ['fill', 'stroke'],
@@ -55,13 +58,11 @@ export default defineConfig({
     // Шрифты (woff2 и пр.)
     fonts: {
       outDir: 'assets/fonts',
-      outName: '[name]',
+      outName: '[name].[hash]',
     },
 
     // Имя основного бандла
-    bundle: {
-      outName: 'bundle',
-    },
+
   },
 
   resolve: {
@@ -103,4 +104,6 @@ export default defineConfig({
       devSourcemap: true,
     },
   },
+
+
 })

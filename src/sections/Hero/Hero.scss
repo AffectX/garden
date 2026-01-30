@@ -1,8 +1,8 @@
 .hero {
-  margin-bottom: fluid(95, 10);
-
+  margin-bottom: fluid(45, 10);
 
   &__inner {
+    min-height: 90vh;
     display: flex;
     align-items: center;
     column-gap: 100px;
@@ -12,15 +12,10 @@
       flex-direction: column;
       align-items: flex-start;
       min-height: auto;
-
     }
-
-
   }
 
   &__body {
-
-
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -44,9 +39,7 @@
     color: var(--color-gray);
     max-width: 450px;
     font-size: 18px;
-
   }
-
 
   &__button {
     @include mobile {
@@ -56,7 +49,6 @@
   }
 
   &__images {
-
     flex-shrink: 1;
     min-width: 0;
   }
@@ -67,6 +59,5 @@
     max-width: 100%;
     display: block;
     border-radius: var(--border-radius-l);
-
   }
 }

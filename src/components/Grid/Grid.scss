@@ -5,6 +5,7 @@
   grid-template-columns: repeat(var(--gridColumns), 1fr);
   column-gap: fluid(50, 40);
   row-gap: 30px;
+  min-width: 0;
 
   &--2 {
     --gridColumns: 2;
@@ -17,14 +18,10 @@
 
     @include tablet {
       --gridColumns: 2;
-
-      row-gap: 42px;
     }
 
     @include mobile {
       --gridColumns: 1;
-
-      row-gap: 30px;
     }
   }
 }

@@ -5,8 +5,9 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 50px;
     row-gap: 20px;
+
 
     @include tablet {
       flex-direction: column;
@@ -26,7 +27,6 @@
       min-width: unset;
     }
 
-
     &-actions {
       display: flex;
       gap: 20px;
@@ -34,6 +34,7 @@
 
     }
   }
+
 
   &__description {
     color: var(--color-gray);

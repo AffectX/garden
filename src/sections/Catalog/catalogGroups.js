@@ -323,8 +323,8 @@ const catalogGroups = [
     title: 'Проф. семяна овощей',
     items: [
       {
-        image: '/src/assets/images/Catalog/vegetables/Аркано.jpg',
-        title: 'Аркано - среднеранний гибрид сладкого перца',
+        image: '/src/assets/images/Catalog/vegetables/Arkano.jpg',
+        title: 'Аркано — среднеранний гибрид сладкого перца',
         manufacturer: 'Производитель — Sakata(Япония)',
         parameters:'Масса плодов — до 400 г \n Диаметр — 10-11 см \n Длина — 12-14 см ',
         count: 10,
@@ -332,6 +332,67 @@ const catalogGroups = [
         price: 100,
         inStock: true,
 
+      },
+
+      {
+        image: '/src/assets/images/Catalog/vegetables/Epic F1.jpg',
+        title: 'Баклажан Эпик F1 — раннеспелый гибрид',
+        manufacturer: 'Производитель — Нидерланды',
+        parameters:'Масса плодов — 200-250 г \n Диаметр — 9.5-10 см \n Длина — 20-22 см ',
+        count: 10,
+        description: 'Мощное, полураскидистое растение, высотой 90-100 см. Стебель зелено-фиолетового цвета, листья среднего размера, овальные, зеленые. ',
+        price: 60,
+        inStock: true,
+      },
+
+      {
+        image: '/src/assets/images/Catalog/vegetables/President F1.jpg',
+        title: 'Томат Президент F1 — ранний высокоурожайный гибрид',
+        manufacturer: 'Производитель — Seminis (Нидерланды)',
+        parameters:'Масса плодов — 200-300 г \n Высота куста — 1-1.5 м',
+        count: 5,
+        description: 'Предназначен для выращивания в открытом и закрытом грунте. Устойчив к фузариозу, вертициллезу, нематодам, вирусу мозаики, серой пятнистости, альтернариозному раку стебля.',
+        price: 100,
+        inStock: true,
+      },
+
+    ]
+  },
+  {
+    title: 'Гортензии',
+    items: [
+      {
+        image: '/src/assets/images/Catalog/vegetables/Arkano.jpg',
+        title: 'Аркано — среднеранний гибрид сладкого перца',
+        manufacturer: 'Производитель — Sakata(Япония)',
+        parameters:'Масса плодов — до 400 г \n Диаметр — 10-11 см \n Длина — 12-14 см ',
+        count: 10,
+        description: '135 — 140 дней от всходов до начала плодоношения. Красивые выровненные плоды на протяжении всего плодоношения ',
+        price: 100,
+        inStock: true,
+
+      },
+
+      {
+        image: '/src/assets/images/Catalog/vegetables/Epic F1.jpg',
+        title: 'Баклажан Эпик F1 — раннеспелый гибрид',
+        manufacturer: 'Производитель — Нидерланды',
+        parameters:'Масса плодов — 200-250 г \n Диаметр — 9.5-10 см \n Длина — 20-22 см ',
+        count: 10,
+        description: 'Мощное, полураскидистое растение, высотой 90-100 см. Стебель зелено-фиолетового цвета, листья среднего размера, овальные, зеленые. ',
+        price: 60,
+        inStock: true,
+      },
+
+      {
+        image: '/src/assets/images/Catalog/vegetables/President F1.jpg',
+        title: 'Томат Президент F1 — ранний высокоурожайный гибрид',
+        manufacturer: 'Производитель — Seminis (Нидерланды)',
+        parameters:'Масса плодов — 200-300 г \n Высота куста — 1-1.5 м',
+        count: 5,
+        description: 'Предназначен для выращивания в открытом и закрытом грунте. Устойчив к фузариозу, вертициллезу, нематодам, вирусу мозаики, серой пятнистости, альтернариозному раку стебля.',
+        price: 100,
+        inStock: true,
       },
 
     ]

@@ -3,9 +3,13 @@
 
   display: grid;
   grid-template-columns: repeat(var(--gridColumns), 1fr);
-  column-gap: fluid(50, 40);
+  column-gap: 0;
   row-gap: 30px;
   min-width: 0;
+
+  > * {
+    min-width: 0;
+  }
 
   &--2 {
     --gridColumns: 2;
@@ -21,7 +25,7 @@
     }
 
     @include mobile {
-      --gridColumns: 1;
+      grid-template-columns: 1fr;
     }
   }
 }

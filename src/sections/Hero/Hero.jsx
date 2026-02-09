@@ -26,8 +26,9 @@ export default () => {
             </Button>
             <Button
               className="hero__button"
-              href="/"
+              href="https://t.me/Rayssad"
               label="Получить консультацию"
+              target="_blank"
             >
             </Button>
           </div>

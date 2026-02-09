@@ -12,6 +12,7 @@ export default (props) => {
     image,
     manufacturer,
     parameters,
+    count,
   } = props
 
   return (
@@ -31,6 +32,11 @@ export default (props) => {
             {parameters && (
               <div className="card__parameters">
                 {parameters}
+              </div>
+            )}
+            {count && (
+              <div className="card__parameters">
+               Колличество семян — {count}
               </div>
             )}
             <div className="card__description">

@@ -55,7 +55,7 @@ export default (props) => {
 
         </Button>
         <div className="card__price">
-          <p>{`${price} рублей`}</p>
+          <p>{` ${price} рублей`}</p>
         </div>
       </div>
     </article>

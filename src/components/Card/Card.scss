@@ -33,6 +33,7 @@
     font-family: "Playfair Display", sans-serif;
     font-size: 32px;
     overflow-wrap: anywhere;
+    text-align: center;
   }
 
   &__info {
@@ -40,6 +41,7 @@
     row-gap: 10px;
     font-size: 18px;
     white-space: pre-line;
+    color: var(--color-black);
   }
 
 

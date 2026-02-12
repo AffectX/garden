@@ -424,6 +424,17 @@ const catalogGroups = [
         inStock: true,
       },
 
+      {
+        title: 'Монтоп F1 — раннеспелый гибрид капусты брокколи',
+        image: '/src/assets/images/Catalog/vegetables/Montop_F1.jpg',
+        manufacturer: 'Производитель — Syngenta (Нидерланды)',
+        parameters:'Масса кочана — 1-1.5 кг \n Сроки созревания — 60-65 дней ',
+        count: 10,
+        description:'\n Цвет плода серо-зеленый \n Обладает отличным вкусом',
+        price: 60,
+        inStock: true,
+      },
+
 
 
 
